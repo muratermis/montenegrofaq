@@ -10,13 +10,14 @@ export function validate(data) {
 const response=(status,ok)=>Response.json({ok},{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 export async function onRequest(context) {
  const {request,env}=context;
+ if(request.method==='GET')return Response.json({available:Boolean(env.TELEGRAM_BOT_TOKEN&&env.TELEGRAM_CHAT_ID&&env.FEEDBACK_LIMITS)},{headers:{'Cache-Control':'no-store'}});
  if(request.method!=='POST')return response(405,false);
  const origin=request.headers.get('Origin');
  const allowed=new Set(['https://montenegrofaq.org','https://montefaq.org',new URL(request.url).origin]);
  if(!origin||!allowed.has(origin)||request.headers.get('Sec-Fetch-Site')==='cross-site')return response(403,false);
  if(!request.headers.get('Content-Type')?.startsWith('application/json'))return response(415,false);
  if(Number(request.headers.get('Content-Length')||0)>14000)return response(413,false);
- let data;try{const raw=await request.text();if(raw.length>14000)return response(413,false);data=JSON.parse(raw);}catch{return response(400,false);}
+ let data;try{const reader=request.body?.getReader();if(!reader)return response(400,false);const chunks=[];let size=0;while(true){const {done,value}=await reader.read();if(done)break;size+=value.byteLength;if(size>14000){await reader.cancel();return response(413,false);}chunks.push(value);}const bytes=new Uint8Array(size);let offset=0;for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.byteLength;}data=JSON.parse(new TextDecoder().decode(bytes));}catch{return response(400,false);}
  if(data?.website)return response(200,true);
  if(!validate(data))return response(400,false);
  // Fail closed until the owner configures delivery and shared rate-limit storage.
