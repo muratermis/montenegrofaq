@@ -1,4 +1,4 @@
-import {readFile,readdir,stat} from 'node:fs/promises';import {resolve,join} from 'node:path';import assert from 'node:assert/strict';import {guides} from '../content/guides.mjs';
+import {readFile,readdir,stat} from 'node:fs/promises';import {resolve,join} from 'node:path';import assert from 'node:assert/strict';import {guides,cityGuides,municipalities} from '../content/catalog.mjs';
 const root=resolve('dist'),locales=JSON.parse(await readFile('content/locales.json'));
 async function walk(dir){const out=[];for(const f of await readdir(dir)){const p=join(dir,f);if((await stat(p)).isDirectory())out.push(...await walk(p));else out.push(p);}return out;}
 const files=await walk(root),html=files.filter(f=>f.endsWith('.html'));let checked=0;
@@ -6,3 +6,8 @@ for(const file of html){const s=await readFile(file,'utf8');assert.equal((s.matc
 for(const g of guides){for(const l of Object.keys(locales)){assert.equal(g.translations[l],g.revision,`${g.slug}: stale ${l} translation`);assert.ok(g[l]?.sections.length>=4);assert.ok(g.sources.length);assert.ok(g.checked<=g.updated);const page=await readFile(join(root,l,g.slug,'index.html'),'utf8');assert.ok(page.indexOf('date-panel')<page.indexOf('article-intro'),'date must precede content');assert.ok(page.includes(`datetime="${g.updated}"`));}}
 assert.ok(!(await readFile('site.config.json','utf8')).match(/(?:ghp_|gho_|sk_live_|\d{8,}:[A-Za-z0-9_-]{30,})/),'possible secret');
 console.log(`Validated ${checked} localized pages: internal links, local assets, language alternates, JSON-LD, dates and translation revisions.`);
+
+assert.equal(new Set(guides.map(g=>g.slug)).size,guides.length,'guide slugs must be unique');
+for(const municipality of municipalities)assert.ok(cityGuides.some(g=>g.municipality===municipality),`missing municipality: ${municipality}`);
+for(const g of cityGuides){assert.ok(['coast','central','north'].includes(g.region));for(const l of Object.keys(locales)){assert.ok(g[l].sections.length>=8,`${g.slug}: incomplete city guide`);assert.ok(g[l].sections.flat().join(' ').split(/\s+/u).length>=280,`${g.slug}: insufficient guide detail`);const page=await readFile(join(root,l,g.slug,'index.html'),'utf8');assert.match(page,/class="guide-chapter"/);assert.match(page,/TouristDestination/);assert.ok(!page.includes('class="article-banner"'),'do not label Kotor image as another destination');}}
+console.log(`Confirmed ${municipalities.length} municipalities and ${cityGuides.length} destination guides, with substantial content in each language.`);
