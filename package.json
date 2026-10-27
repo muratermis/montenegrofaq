@@ -1,0 +1,1 @@
+{"name":"montenegrofaq","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","check":"node scripts/check.mjs","test":"node --test scripts/*.test.mjs","dev":"node scripts/serve.mjs","audit:content":"node scripts/audit.mjs"},"engines":{"node":">=22"}}

@@ -1,0 +1,2 @@
+# Domain redirects are configured with Cloudflare zone Redirect Rules.
+# Pages _redirects supports paths, not domain-level source matching.
