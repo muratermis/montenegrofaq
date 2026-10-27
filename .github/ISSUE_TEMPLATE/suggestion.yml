@@ -1,0 +1,13 @@
+name: Suggestion or feature request
+description: Public suggestions only. Do not include personal or confidential information.
+title: '[Suggestion] '
+body:
+  - type: markdown
+    attributes:
+      value: 'For private corrections or removal requests, use https://montenegrofaq.org/en/feedback/ instead.'
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would improve the guide?
+    validations:
+      required: true
