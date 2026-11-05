@@ -400,8 +400,8 @@ export const northernGuides = [
         "url": "https://parkpiva.com/"
       },
       {
-        "name": "Piva Nature Park — Piva Monastery",
-        "url": "https://parkpiva.com/listing/pivski-manastir/"
+        "name": "National Tourism Organisation — Piva Monastery, Crown of Montenegro brochure (PDF, page 2)",
+        "url": "https://www.montenegro.travel/uploads/brochures/Panoramic%20Roads/ENG/Map-Crown-of-Montenegro.pdf"
       },
       {
         "name": "Municipality of Plužine — Piva Nature Park",
