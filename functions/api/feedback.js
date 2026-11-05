@@ -1,8 +1,9 @@
+import {supportedLanguages} from '../../content/languages.mjs';
 export const TYPES = new Set(['suggestion','correction','feature','removal']);
 export function validate(data) {
  if(!data||typeof data!=='object'||Array.isArray(data)) return false;
  if(typeof data.message!=='string'||data.message.trim().length<10||data.message.length>2500) return false;
- if(!TYPES.has(data.type)||!['en','tr'].includes(data.locale)||data.consent!=='yes') return false;
+ if(!TYPES.has(data.type)||!supportedLanguages.includes(data.locale)||data.consent!=='yes') return false;
  if(data.email && (typeof data.email!=='string'||data.email.length>254||!/^\S+@[^\s@]+\.[^\s@]+$/.test(data.email)||/[\r\n]/.test(data.email))) return false;
  if(data.page){if(typeof data.page!=='string'||data.page.length>500)return false;try{const u=new URL(data.page);if(!['https:','http:'].includes(u.protocol))return false;}catch{return false;}}
  return true;
