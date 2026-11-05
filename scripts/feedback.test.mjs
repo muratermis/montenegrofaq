@@ -1,3 +1,4 @@
+import {supportedLanguages} from '../content/languages.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';import {validate,onRequest} from '../functions/api/feedback.js';
 const valid={type:'correction',locale:'tr',consent:'yes',message:'Please check the opening hours.',email:'visitor@example.com',page:'https://montenegrofaq.org/tr/kotor/','cf-turnstile-response':'test-response'};
 const req=(data,extra={})=>new Request('https://montenegrofaq.org/api/feedback',{method:'POST',headers:{Origin:'https://montenegrofaq.org','Content-Type':'application/json',...extra},body:JSON.stringify(data)});
@@ -29,4 +30,4 @@ test('recently delivered duplicate is not sent to Telegram again',async()=>{
 test('verification errors and storage outages fail closed',async()=>{const original=globalThis.fetch;try{globalThis.fetch=async()=>{throw Error('offline');};assert.equal((await onRequest({request:req(valid),env:enabled()})).status,502);const env=enabled();env.FEEDBACK_LIMITS.get=async()=>{throw Error('storage');};assert.equal((await onRequest({request:req(valid),env})).status,502);}finally{globalThis.fetch=original;}});
 test('availability requires every server-side secret and binding',async()=>{const env=enabled();const request=new Request('https://montenegrofaq.org/api/feedback');assert.deepEqual(await (await onRequest({request,env})).json(),{available:true});delete env.TURNSTILE_SECRET_KEY;assert.deepEqual(await (await onRequest({request,env})).json(),{available:false});});
 
-test('accepts published language tags in feedback and rejects unknown locales',()=>{for(const locale of ['de','cnr','sr','cs','sk','el'])assert.equal(validate({...valid,locale}),true);for(const locale of ['xx','ja','zh-Hans','lb'])assert.equal(validate({...valid,locale}),false);});
+test('accepts published language tags in feedback and rejects unknown locales',()=>{for(const locale of supportedLanguages)assert.equal(validate({...valid,locale}),true);for(const locale of ['xx','not-a-language'])assert.equal(validate({...valid,locale}),false);});

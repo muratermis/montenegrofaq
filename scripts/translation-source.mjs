@@ -4,7 +4,7 @@ import {join} from 'node:path';
 import {createHash} from 'node:crypto';
 export const translatedAttributes=new Set(['alt','title','aria-label','placeholder']);
 export const schemaTextKeys=new Set(['name','description','headline','text']);
-export const normal=s=>String(s).trim();
+export const normal=s=>String(s).trim().replace(/The platform offers \d+ languages\./g,'The platform offers {{languageCount}} languages.');
 export const meaningful=s=>/\p{L}/u.test(s)&&!/^https?:\/\//.test(s)&&!['Montenegro FAQ','BEMU','BEMU NFC','GitHub','404'].includes(s);
 export function walk(node,fn){fn(node);for(const c of node.childNodes||[])walk(c,fn);}
 export const attr=(node,name)=>node.attrs?.find(a=>a.name===name)?.value;
