@@ -7,7 +7,12 @@ export const plannedLanguages=[
  ['sv','Svenska','sv-SE','sv'],['no','Norsk','nb-NO','no'],['da','Dansk','da-DK','da'],['fi','Suomi','fi-FI','fi'],['is','Íslenska','is-IS','is'],['et','Eesti','et-EE','et'],['lv','Latviešu','lv-LV','lv'],['lt','Lietuvių','lt-LT','lt'],
  ['zh-Hans','简体中文','zh-Hans-CN','zh-CN'],['ja','日本語','ja-JP','ja'],['ko','한국어','ko-KR','ko'],
  ['be','Беларуская','be-BY','be'],['mt','Malti','mt-MT','mt'],['ga','Gaeilge','ga-IE','ga'],['ca','Català','ca-ES','ca'],['eu','Euskara','eu-ES','eu'],['gl','Galego','gl-ES','gl'],['cy','Cymraeg','cy-GB','cy'],['lb','Lëtzebuergesch','lb-LU','lb']
-].map(([code,name,locale,target])=>({code,name,locale,target,lang:code==='sr'?'sr-Latn':code}));
+].map(([code,name,locale,target])=>{
+ const lang=code==='sr'?'sr-Latn':code;
+ // Google hreflang requires ISO 639-1; keep cnr for HTML language identity,
+ // and use the existing Latin/Montenegro locale as its search fallback.
+ return {code,name,locale,target,lang,hreflang:code==='cnr'?'sr-Latn-ME':lang};
+});
 const publishedCodes=new Set('en tr cnr sr ru uk de pl fr it es sq bs hr sl mk bg ro hu cs sk el nl sv no pt da fi is et lv lt zh-Hans ja ko be mt ga ca eu gl cy lb'.split(' '));
 export const languages=plannedLanguages.filter(l=>publishedCodes.has(l.code));
 export const supportedLanguages=languages.map(l=>l.code);

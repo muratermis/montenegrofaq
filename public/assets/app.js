@@ -1,3 +1,5 @@
+const header=document.querySelector('.header');
+if(header){const updateHeaderOffset=()=>document.documentElement.style.setProperty('--header-offset',Math.ceil(header.getBoundingClientRect().height+16)+'px');updateHeaderOffset();if('ResizeObserver' in window)new ResizeObserver(updateHeaderOffset).observe(header);else window.addEventListener('resize',updateHeaderOffset);}
 const body=document.body,locale=body.dataset.locale||'en';
 const normalise=s=>String(s).toLocaleLowerCase(locale).normalize('NFD').replace(/\p{M}/gu,'').replace(/ı/g,'i').replace(/đ/g,'d');
 const text=JSON.parse(document.querySelector('#ui-data')?.textContent||'{}');
@@ -31,7 +33,7 @@ if(form){
   if(!available){status.textContent=form.dataset.unavailable;return;}
   status.textContent=form.dataset.checking;
   const script=document.createElement('script');script.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';script.async=true;
-  script.onload=()=>{try{widgetId=window.turnstile.render(challenge,{sitekey:challenge.dataset.sitekey,action:'feedback',language:locale==='tr'?'tr':'auto',theme:'auto',callback:token=>{challengeToken=token;ready();if(status.textContent===form.dataset.checking||status.textContent===form.dataset.securityError)status.textContent='';},'expired-callback':challengeFailed,'error-callback':challengeFailed});}catch{challengeFailed();}};
+  script.onload=()=>{try{widgetId=window.turnstile.render(challenge,{sitekey:challenge.dataset.sitekey,action:'feedback',size:challenge.clientWidth<300?'compact':'normal',language:locale==='tr'?'tr':'auto',theme:'auto',callback:token=>{challengeToken=token;ready();if(status.textContent===form.dataset.checking||status.textContent===form.dataset.securityError)status.textContent='';},'expired-callback':challengeFailed,'error-callback':challengeFailed});}catch{challengeFailed();}};
   script.onerror=challengeFailed;document.head.append(script);
  }).catch(()=>{status.textContent=form.dataset.unavailable;});
  const page=new URLSearchParams(location.search).get('page');if(page){try{const url=new URL(page);if(url.origin===location.origin||['https://montenegrofaq.org','https://montefaq.org'].includes(url.origin))form.elements.page.value=url.href;}catch{}}
