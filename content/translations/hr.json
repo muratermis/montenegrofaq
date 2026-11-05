@@ -1,7 +1,7 @@
 {
   "language": "hr",
   "sourceHash": "a8ad55f885ac8be98809b5e9b4e2664d668324cd4a5ee3389de53118bd506102",
-  "translatedAt": "2026-11-05",
+  "translatedAt": "2026-11-06",
   "method": "machine-assisted",
   "provider": "Google Translate web",
   "entries": {
@@ -65,7 +65,7 @@
     "A small magnet. A whole country to discover.": "Mali magnet. Cijela zemlja za otkriti.",
     "A small town with a wide mountain hinterland, suited to an unhurried stop or an organised outdoor stay.": "Mali grad sa širokim planinskim zaleđem, pogodan za bezbrzo zaustavljanje ili organizirani boravak u prirodi.",
     "A small-town base between Podgorica and Nikšić, with riverside scenery and important pilgrimage sites.": "Mali grad u bazi između Podgorice i Nikšića, s krajolikom uz rijeku i važnim hodočasničkim mjestima.",
-    "A strong signal on the street does not establish a stable video call inside a particular room. For remote work, test the workspace itself, including an upload and a call, and keep a second connection independent of the household router. On mountain or lake outings, download maps and meeting details before leaving. No tourist plan can guarantee reception in every canyon or rural building.": "Jak signal na ulici ne uspostavlja stabilan video poziv unutar određene prostorije. Za rad na daljinu testirajte sam radni prostor, uključujući prijenos i poziv, i zadržite drugu vezu neovisnu o kućnom usmjerivaču. Na izletima u planine ili jezera preuzmite karte i detalje o sastancima prije odlaska. Nijedan turistički plan ne može jamčiti prijem u svakom kanjonu ili ruralnom objektu.",
+    "A strong signal on the street does not establish a stable video call inside a particular room. For remote work, test the workspace itself, including an upload and a call, and keep a second connection independent of the household router. On mountain or lake outings, download maps and meeting details before leaving. No tourist plan can guarantee reception in every canyon or rural building.": "Jak signal na ulici sam po sebi ne jamči stabilan videopoziv u određenoj prostoriji. Za rad na daljinu testirajte sam radni prostor, uključujući prijenos i poziv, i zadržite drugu vezu neovisnu o kućnom usmjerivaču. Na izletima u planine ili jezera preuzmite karte i detalje o sastancima prije odlaska. Nijedan turistički paket mobilne telefonije ne može jamčiti signal u svakom kanjonu ili ruralnom objektu.",
     "A town base suits visitors who want local services and a straightforward start from Podgorica. Rural accommodation suits a landscape-focused stay but changes the distance to shops, meals and transport. Compare the exact settlement and access road, not just the municipality name. For an overnight before a flight, calculate the actual airport route instead of equating proximity to Podgorica with terminal access.": "Baza grada odgovara posjetiteljima koji žele lokalne usluge i jednostavan početak iz Podgorice. Ruralni smještaj odgovara boravku usmjerenom na krajolik, ali mijenja udaljenost do trgovina, obroka i prijevoza. Usporedite točno naselje i pristupnu cestu, a ne samo naziv općine. Za noćenje prije leta izračunajte stvarnu rutu do zračne luke umjesto da poistovjećujete blizinu Podgorice s pristupom terminalu.",
     "A town day — editorial itinerary": "Dan grada — redakcijski itinerer",
     "A town shaped by water": "Grad koji je oblikovala voda",
@@ -355,7 +355,7 @@
     "Feature request": "Zahtjev za značajku",
     "Feedback": "Povratne informacije",
     "Find the official starting points and separate visitor, residence and work permissions.": "Pronađite službena polazišta i odvojene dozvole za posjetitelje, boravak i rad.",
-    "Find your feet in Montenegro.": "Pronađite svoje noge u Crnoj Gori.",
+    "Find your feet in Montenegro.": "Snađite se u Crnoj Gori.",
     "Find your place in Montenegro": "Pronađite svoje mjesto u Crnoj Gori",
     "Fire & rescue": "Vatra i spašavanje",
     "Fire & rescue · Call 123": "Vatrogasci i spasioci · Nazovite 123",
@@ -429,7 +429,7 @@
     "Herceg Novi’s cultural calendar includes events outside a purely summer beach holiday; the Mimosa Festival is a notable part of the town’s identity. Use the official dated calendar when matching a trip to a performance. For living here, the hillside-versus-waterfront question remains important in winter as well as summer: everyday shopping, parking and stair access affect the routine more than a holiday photograph shows.": "Kulturni kalendar Herceg Novog uključuje događaje izvan čisto ljetnog odmora na plaži; Praznik mimoza značajan je dio identiteta grada. Koristite službeni kalendar s datumom kada povezujete putovanje s nastupom. Za život ovdje, pitanje obronaka u odnosu na obalu ostaje važno i zimi i ljeti: svakodnevna kupnja, parkiranje i pristup stepenicama utječu na rutinu više nego što to pokazuje fotografija s odmora.",
     "History before the marina": "Povijest prije marine",
     "History you can actually explore": "Povijest koju zapravo možete istraživati",
-    "Home": "Dom",
+    "Home": "Početna",
     "Hosting": "Hosting",
     "How Igalo relates to Herceg Novi": "Kakav je odnos Igala prema Herceg Novom",
     "How Montenegro FAQ uses AI, sources and transparent updates.": "Kako Montenegro FAQ koristi AI, izvore i transparentna ažuriranja.",
@@ -548,7 +548,7 @@
     "Miločer adds a landscaped coastal setting associated with a former royal summer residence. Combine a permitted mainland walk with a relaxed pause instead of treating it as a shortcut that automatically grants access to every beach or hotel space. Follow the boundaries and signs you encounter. If the intended route is unavailable, keep the island-view portion of the day rather than forcing a substitute through restricted land.": "Miločer dodaje uređeni obalni ambijent povezan s nekadašnjom kraljevskom ljetnom rezidencijom. Kombinirajte dopuštenu šetnju kopnom s opuštenom stankom umjesto da je tretirate kao prečac koji automatski omogućuje pristup svakoj plaži ili hotelskom prostoru. Pratite granice i znakove na koje nailazite. Ako predviđena ruta nije dostupna, zadržite dio dana s pogledom na otok radije nego forsirajte zamjenu kroz zabranjeno područje.",
     "Miločer is another part of the visit": "Miločer je drugi dio posjeta",
     "Ministry of the Interior — official 112 service information ↗": "Ministarstvo unutarnjih poslova — službene informacije servisa 112 ↗",
-    "Modern Bar and the seafront": "Moderni bar i obala mora",
+    "Modern Bar and the seafront": "Suvremeni Bar i morska obala",
     "Mojkovac": "Mojkovac",
     "Mojkovac Tourism Organisation — cultural heritage ↗": "Turistička organizacija Mojkovac — kulturna baština ↗",
     "Mojkovac Tourism Organisation — town overview ↗": "Turistička organizacija Mojkovac — pregled grada ↗",
@@ -1091,7 +1091,7 @@
     "Walking versus mountaineering": "Hodanje nasuprot planinarenju",
     "Warm months suit longer periods outdoors, with early or later activity often more comfortable than a full midday programme. After wet weather, the landscape and access can differ considerably. Cetinje is a useful separate cultural addition; Virpazar offers another lake departure base. Choose the combination around your transport and available daylight. Circling several lake settlements is not automatically better than understanding one properly.": "Topli mjeseci odgovaraju duljim razdobljima na otvorenom, s ranom ili kasnijom aktivnošću koja je često ugodnija od punog podnevnog programa. Nakon vlažnog vremena krajolik i pristup mogu se znatno razlikovati. Cetinje je koristan zasebni kulturni dodatak; Virpazar nudi još jednu polaznu bazu na jezeru. Odaberite kombinaciju vašeg prijevoza i dostupnog dnevnog svjetla. Zaokruživanje nekoliko jezerskih naselja nije automatski bolje od pravilnog razumijevanja jednog.",
     "Website": "web stranica",
-    "Welcome from BEMU. Choose how you want to explore Montenegro.": "Dobrodošli iz BEMU. Odaberite kako želite istražiti Crnu Goru.",
+    "Welcome from BEMU. Choose how you want to explore Montenegro.": "BEMU vam želi dobrodošlicu. Odaberite kako želite istražiti Crnu Goru.",
     "West of the valley, the Bjelasica landscape and Jelovica area provide a different day from walking around town. Lakes and katuns are destinations reached through mountain terrain, not convenient extensions to a café visit. Select one route, work out its starting point and keep the return journey in the programme. An accommodation view does not establish access to a specific lake.": "Zapadno od doline, krajolik Bjelasice i područje Jelovice pružaju drugačiji dan od šetnje gradom. Jezera i katuni su odredišta do kojih se dolazi preko planinskog terena, a ne prikladni produžeci posjeta kafiću. Odaberite jednu rutu, odredite početnu točku i zadržite povratno putovanje u programu. Pogled na smještaj ne uspostavlja pristup određenom jezeru.",
     "What about Podgorica and Cetinje?": "Što je s Podgoricom i Cetinjem?",
     "What about tipping and the bill?": "Što je s napojnicom i računom?",
@@ -1102,7 +1102,7 @@
     "What costs and arrangements are separate?": "Koji su troškovi i aranžmani odvojeni?",
     "What does a change of address mean for my plan?": "Što promjena adrese znači za moj plan?",
     "What does a sensible first-evening plan look like?": "Kako izgleda razuman plan za prvu večer?",
-    "What does an actual tourist plan look like?": "Kako izgleda pravi turistički plan?",
+    "What does an actual tourist plan look like?": "Kako izgleda konkretan turistički paket mobilne telefonije?",
     "What else to do in town": "Što drugo raditi u gradu",
     "What if I change municipality?": "Što ako promijenim općinu?",
     "What if I lose my passport?": "Što ako izgubim putovnicu?",
@@ -1134,7 +1134,7 @@
     "What should I check before renting?": "Što trebam provjeriti prije najma?",
     "What should I check when renting a car?": "Što trebam provjeriti prilikom iznajmljivanja automobila?",
     "What should I check with my accommodation?": "Što trebam provjeriti sa svojim smještajem?",
-    "What should I compare in a plan?": "Što trebam usporediti u planu?",
+    "What should I compare in a plan?": "Što trebam usporediti u paketu mobilne telefonije?",
     "What should I confirm with accommodation?": "Što trebam potvrditi smještajem?",
     "What should I do before arriving?": "Što trebam učiniti prije dolaska?",
     "What should I keep after paying?": "Što trebam zadržati nakon plaćanja?",
@@ -1238,5 +1238,9 @@
     "National Tourism Organisation — Piva Monastery, Crown of Montenegro brochure (PDF, page 2) ↗": "Nacionalna turistička organizacija — brošura „Manastir Piva – kruna Crne Gore” (PDF, stranica 2) ↗",
     "Piva Nature Park — official contact and visitor information ↗": "Park prirode Piva — službeni kontakt i informacije za posjetitelje ↗",
     ". The platform offers {{languageCount}} languages. Additional translations are machine-assisted; consult the original English version and official sources when a phrase is unclear.": ". Platforma nudi {{languageCount}} jezika. Dodatni prijevodi su strojno potpomognuti; konzultirajte izvornu englesku verziju i službene izvore kada izraz nije jasan."
+  },
+  "aiReview": {
+    "date": "2026-11-06",
+    "scope": "Targeted semantic review of critical facts, terminology, source labels and navigation"
   }
 }

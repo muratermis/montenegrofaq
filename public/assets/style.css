@@ -20,3 +20,14 @@
 @media(max-width:540px){.city-grid{grid-template-columns:1fr}.city-meta{grid-template-columns:1fr 1fr}.city-meta>div:last-child{grid-column:1/-1}.city-meta dd{font-size:.84rem}.header-inner .brand{font-size:1.1rem}.main-nav{gap:17px}}
 
 .language .tool-menu{width:min(330px,calc(100vw - 28px));max-height:70vh;display:flex;flex-direction:column;overflow:hidden}.language-search{padding:6px 8px 10px;border-bottom:1px solid var(--line)}.language-search label{padding:0;font-size:.8rem}.language-search input{display:block;width:100%;margin-top:5px;padding:9px;border:1px solid var(--line);border-radius:5px;background:var(--surface);color:var(--ink)}.language-options{overflow:auto;overscroll-behavior:contain;max-height:55vh}.translation-note{font-size:.76rem!important;line-height:1.6;color:var(--muted);margin-block:12px}.language-entry,.nfc .hero-buttons{flex-wrap:wrap;gap:10px}.language-entry a{font-size:.85rem}.language summary{max-width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Keep translated labels readable without widening narrow screens. */
+html{scroll-padding-top:var(--header-offset,110px)}
+.home-hero>*{min-width:0}
+main h1,main h2,main h3,.translation-note,.sources a,.prose a,.service-source,.guide-card{overflow-wrap:anywhere}
+.guide-chapter,.faq-list details{scroll-margin-top:16px}
+.header-tools,.language{min-width:0}
+.language-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.language summary>svg,.language summary>span:last-child{flex-shrink:0}
+@media(max-width:760px){.header-inner{display:grid;grid-template-columns:max-content minmax(0,1fr)}.header-tools{justify-self:end;max-width:100%}.main-nav{grid-column:1/-1}}
+@media(max-width:360px){.header-inner .brand{font-size:1rem}.header-inner .brand svg{width:28px}.language summary>.icon{display:inline}.language-name{display:none}.search-form{flex-wrap:wrap}.search-form input{flex:1;min-width:120px}.search-form .button{width:100%}}

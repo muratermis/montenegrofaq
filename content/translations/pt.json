@@ -1,7 +1,7 @@
 {
   "language": "pt",
   "sourceHash": "a8ad55f885ac8be98809b5e9b4e2664d668324cd4a5ee3389de53118bd506102",
-  "translatedAt": "2026-11-05",
+  "translatedAt": "2026-11-06",
   "method": "machine-assisted",
   "provider": "Google Translate web",
   "entries": {
@@ -65,7 +65,7 @@
     "A small magnet. A whole country to discover.": "Um pequeno ímã. Um país inteiro para descobrir.",
     "A small town with a wide mountain hinterland, suited to an unhurried stop or an organised outdoor stay.": "Uma pequena cidade com um amplo interior montanhoso, ideal para uma parada sem pressa ou uma estadia organizada ao ar livre.",
     "A small-town base between Podgorica and Nikšić, with riverside scenery and important pilgrimage sites.": "Uma base em uma pequena cidade entre Podgorica e Nikšić, com paisagens ribeirinhas e importantes locais de peregrinação.",
-    "A strong signal on the street does not establish a stable video call inside a particular room. For remote work, test the workspace itself, including an upload and a call, and keep a second connection independent of the household router. On mountain or lake outings, download maps and meeting details before leaving. No tourist plan can guarantee reception in every canyon or rural building.": "Um sinal forte na rua não garante uma chamada de vídeo estável dentro de um cômodo específico. Para trabalho remoto, teste o próprio espaço de trabalho, incluindo um upload e uma chamada, e mantenha uma segunda conexão independente do roteador doméstico. Em passeios na montanha ou em lagos, baixe mapas e detalhes da reunião antes de sair. Nenhum roteiro turístico pode garantir recepção em todos os cânions ou construções rurais.",
+    "A strong signal on the street does not establish a stable video call inside a particular room. For remote work, test the workspace itself, including an upload and a call, and keep a second connection independent of the household router. On mountain or lake outings, download maps and meeting details before leaving. No tourist plan can guarantee reception in every canyon or rural building.": "Um sinal forte na rua, por si só, não garante uma chamada de vídeo estável dentro de um cômodo específico. Para trabalho remoto, teste o próprio espaço de trabalho, incluindo um upload e uma chamada, e mantenha uma segunda conexão independente do roteador doméstico. Em passeios na montanha ou em lagos, baixe mapas e detalhes da reunião antes de sair. Nenhum pacote de dados móveis para turistas pode garantir sinal de rede em todos os desfiladeiros ou edifícios rurais.",
     "A town base suits visitors who want local services and a straightforward start from Podgorica. Rural accommodation suits a landscape-focused stay but changes the distance to shops, meals and transport. Compare the exact settlement and access road, not just the municipality name. For an overnight before a flight, calculate the actual airport route instead of equating proximity to Podgorica with terminal access.": "Uma base na cidade é ideal para visitantes que desejam serviços locais e um início fácil a partir de Podgorica. A acomodação rural é ideal para uma estadia focada na paisagem, mas altera a distância para lojas, restaurantes e transporte. Compare o nome exato do assentamento e da estrada de acesso, não apenas o nome do município. Para uma pernoite antes de um voo, calcule a rota real até o aeroporto em vez de equiparar a proximidade de Podgorica ao acesso ao terminal.",
     "A town day — editorial itinerary": "Um dia na cidade — roteiro editorial",
     "A town shaped by water": "Uma cidade moldada pela água",
@@ -354,7 +354,7 @@
     "Feature request": "Sugestão de recurso",
     "Feedback": "Feedback",
     "Find the official starting points and separate visitor, residence and work permissions.": "Encontre os pontos de partida oficiais e as permissões separadas para visitantes, residentes e trabalhadores.",
-    "Find your feet in Montenegro.": "Sinta-se em Montenegro.",
+    "Find your feet in Montenegro.": "Oriente-se em Montenegro.",
     "Find your place in Montenegro": "Encontre seu lugar em Montenegro",
     "Fire & rescue": "Bombeiros e resgate",
     "Fire & rescue · Call 123": "Bombeiros e resgate · Ligue 123",
@@ -1100,7 +1100,7 @@
     "What costs and arrangements are separate?": "Quais custos e providências são à parte?",
     "What does a change of address mean for my plan?": "O que uma mudança de endereço significa para o meu plano?",
     "What does a sensible first-evening plan look like?": "Como seria um plano sensato para a primeira noite?",
-    "What does an actual tourist plan look like?": "Como seria um plano turístico completo?",
+    "What does an actual tourist plan look like?": "Qual é um exemplo concreto de um pacote de dados móveis para turistas?",
     "What else to do in town": "O que mais fazer na cidade?",
     "What if I change municipality?": "E se eu mudar de município?",
     "What if I lose my passport?": "E se eu perder meu passaporte?",
@@ -1132,7 +1132,7 @@
     "What should I check before renting?": "O que devo verificar antes de alugar um carro?",
     "What should I check when renting a car?": "O que devo verificar ao alugar um carro?",
     "What should I check with my accommodation?": "O que devo verificar com a minha acomodação?",
-    "What should I compare in a plan?": "O que devo comparar em um plano?",
+    "What should I compare in a plan?": "O que devo comparar em um pacote de dados móveis?",
     "What should I confirm with accommodation?": "O que devo confirmar com a acomodação?",
     "What should I do before arriving?": "O que devo fazer antes de chegar?",
     "What should I keep after paying?": "O que devo guardar após o pagamento?",
@@ -1232,5 +1232,9 @@
     "Žabljak: Durmitor beyond a photo stop | Montenegro FAQ": "Žabljak: Durmitor além de um ponto de parada para fotos | Perguntas frequentes sobre Montenegro",
     "“Dobar dan” means good day, “hvala” means thank you and “molim” can mean please or you’re welcome. A friendly greeting is a useful start even when the rest of the conversation is in another language.": "“Dobar dan” significa bom dia, “hvala” significa obrigado e “molim” pode significar por favor ou de nada. Uma saudação amigável é um bom começo, mesmo quando o resto da conversa é em outro idioma.",
     "“Last updated” is the date of a substantive change to this version. “Sources checked” records when its linked references were consulted. A site deployment or a page visit does not reset either date. A source check is not a guarantee that a rule or service will remain unchanged.": "“Última atualização” é a data de uma alteração substancial nesta versão. “Fontes verificadas” registra quando suas referências vinculadas foram consultadas. Uma implantação no site ou uma visita à página não redefine nenhuma dessas datas. Uma verificação de fonte não garante que uma regra ou serviço permanecerá inalterado."
+  },
+  "aiReview": {
+    "date": "2026-11-06",
+    "scope": "Targeted semantic review of critical facts, terminology, source labels and navigation"
   }
 }
