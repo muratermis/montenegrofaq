@@ -31,3 +31,6 @@ main h1,main h2,main h3,.translation-note,.sources a,.prose a,.service-source,.g
 .language summary>svg,.language summary>span:last-child{flex-shrink:0}
 @media(max-width:760px){.header-inner{display:grid;grid-template-columns:max-content minmax(0,1fr)}.header-tools{justify-self:end;max-width:100%}.main-nav{grid-column:1/-1}}
 @media(max-width:360px){.header-inner .brand{font-size:1rem}.header-inner .brand svg{width:28px}.language summary>.icon{display:inline}.language-name{display:none}.search-form{flex-wrap:wrap}.search-form input{flex:1;min-width:120px}.search-form .button{width:100%}}
+
+main h1,main h2,main h3{hyphens:auto}
+@media(max-width:360px){.home-hero h1{font-size:2.1rem}.article-heading h1,.nfc h1{font-size:2rem}}
