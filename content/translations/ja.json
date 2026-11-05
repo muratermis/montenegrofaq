@@ -628,7 +628,7 @@
     "No. Being allowed to visit does not by itself establish permission to live long term or work. Identify the purpose of your stay before relying on someone else’s experience.": "いいえ。訪問許可を得たからといって、長期滞在や就労の許可が下りるわけではありません。 他人の経験談に頼る前に、滞在目的を明確にしてください。",
     "North & mountains": "北部と山岳地帯",
     "Obod and cultural context": "オボドと文化的背景",
-    "Official source: EKIP · official emergency number directory ↗": "公式情報源：EKIP（エストニア・カタール観光局）・緊急連絡先一覧↗",
+    "Official source: EKIP · official emergency number directory ↗": "公式情報源：EKIP · 公式緊急電話番号一覧 ↗",
     "Official source: Ministry of the Interior · 112 service ↗": "公式情報源：内務省・112番サービス↗",
     "Official tourism guidance says tourists not using an accommodation provider’s registration service can register through the local tourism organisation, police or competent local authority within 24 hours. Contact the local office promptly to confirm the process and required documents.": "公式観光案内によると、宿泊施設の登録サービスを利用しない旅行者は、24時間以内に現地の観光団体、警察、または管轄の地方自治体を通じて登録できます。 手続きと必要書類を確認するため、速やかに現地の事務所に連絡してください。",
     "Official visitor entry & registration information ↗": "公式訪問者入場・登録情報 ↗",
@@ -1232,5 +1232,5 @@
   "sourceHash": "a8ad55f885ac8be98809b5e9b4e2664d668324cd4a5ee3389de53118bd506102",
   "translatedAt": "2026-11-05",
   "method": "machine-assisted",
-  "provider": "Google Translate web and Microsoft Translator web; short interface phrase corrected"
+  "provider": "Google Translate web and Microsoft Translator web; interface phrase and official-source label corrected"
 }
