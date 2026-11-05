@@ -1,0 +1,1 @@
+export function sourceReferralUrl(value){const url=new URL(value);url.searchParams.set('utm_source','montenegrofaq.org');url.searchParams.set('utm_medium','referral');url.searchParams.set('utm_campaign','source_reference');return url.href;}
