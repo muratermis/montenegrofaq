@@ -4,7 +4,7 @@ import {emergencyServices, emergencySources} from '../content/emergency.mjs';
 import {createHash} from 'node:crypto';
 import {languages} from '../content/languages.mjs';
 import {expandLanguages,expandEntryPages} from './localize.mjs';
-import {sourceReferralUrl} from './source-links.mjs';
+import {sourceReferralUrl,attributeOutboundLinks} from './source-links.mjs';
 const config=JSON.parse(await readFile(new URL('../site.config.json',import.meta.url)));
 const locales=JSON.parse(await readFile(new URL('../content/locales.json',import.meta.url)));
 export const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -15,7 +15,7 @@ const svg=(name,cls='')=>`<svg class="icon ${cls}" width="24" height="24" viewBo
 const mark='<svg width="48" height="34" viewBox="0 0 58 36" fill="none" aria-hidden="true"><path d="m2 30 20-24 13 15 7-8 14 17M15 22l7-8 6 7" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>';
 const files=[];
 const versions=Object.fromEntries(await Promise.all(['style.css','app.js','theme.js','entry.js'].map(async name=>[name,createHash('sha256').update(await readFile(new URL('../public/assets/'+name,import.meta.url))).digest('hex').slice(0,12)])));
-async function save(path,data){if(path.endsWith('.html'))data=data.replace(/\/assets\/(style\.css|app\.js|theme\.js|entry\.js)/g,(_,name)=>`/assets/${name}?v=${versions[name]}`);await mkdir(new URL(path.substring(0,path.lastIndexOf('/')+1),root),{recursive:true});await writeFile(new URL(path,root),data);}
+async function save(path,data){if(path.endsWith('.html'))data=attributeOutboundLinks(data).replace(/\/assets\/(style\.css|app\.js|theme\.js|entry\.js)/g,(_,name)=>`/assets/${name}?v=${versions[name]}`);await mkdir(new URL(path.substring(0,path.lastIndexOf('/')+1),root),{recursive:true});await writeFile(new URL(path,root),data);}
 const sourceLink=value=>esc(sourceReferralUrl(value));
 const category=(l,id)=>({visit:locales[l].visit,live:locales[l].live,city:locales[l].city,essential:locales[l].first})[id];
 function dates(l,updated,checked){const t=locales[l],fmt=d=>new Intl.DateTimeFormat(t.locale,{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(d));return `<div class="date-panel">${svg('clock')}<div><strong>${t.updated}: <time datetime="${updated}">${fmt(updated)}</time></strong>${checked?`<small>${t.verified}: <time datetime="${checked}">${fmt(checked)}</time></small>`:''}</div></div>`;}
